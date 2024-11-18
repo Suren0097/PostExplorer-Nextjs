@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "PostExplorer - Explore and Learn",
-  description: "Explore posts from the JSONPlaceholder API.",
+  description: "Explore posts from the JSON file.",
 };
 
 export default function RootLayout({ children }) {

@@ -6,9 +6,9 @@ export default function Items() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
+    fetch("/data/posts.json")
       .then((response) => response.json())
-      .then((data) => setPosts(data.slice(0, 100))) // Fetch only the first 10 posts
+      .then((data) => setPosts(data)) // Fetch only the first 10 posts
       .catch((error) => console.error("Error fetching posts:", error));
   }, []);
 
